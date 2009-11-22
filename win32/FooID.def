@@ -1,0 +1,10 @@
+LIBRARY	"FooID"
+EXPORTS
+	fp_init
+	fp_free
+	fp_feed_short
+	fp_feed_float
+	fp_getsize
+	fp_getversion
+	fp_calculate
+
