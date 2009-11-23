@@ -12,4 +12,4 @@ libfooid: $(OBJS)
 	ar -r libfooid.a $(OBJS)
 
 %.o : %.c
-	gcc -c $< -o $@ -Wall
+	gcc -c $< -o $@ -Wall -std=c99
