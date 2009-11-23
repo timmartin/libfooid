@@ -23,7 +23,7 @@
 
 #include "common.h"
 #include "fooid.h"
-#include "io.h"
+
 #include "spectrum.h"
 #include "libresample/resample.h"
 
