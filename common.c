@@ -38,7 +38,7 @@ const int round(const float x) {
     }
     return (int)(x-0.5);
 }
-#else
+#elsif defined(WIN32)
 const int round(const float x)
 {
     int a;

@@ -5,4 +5,4 @@ libfooid: common.o fooid.o harmonics.o regress.o s_fft.o spectrum.o
 	ar -r libfooid.a *.o
 
 %.o : %.c
-	gcc -c $< -o $@ -DSLOWROUND
+	gcc -c $< -o $@

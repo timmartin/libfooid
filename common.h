@@ -117,6 +117,9 @@ struct t_fooid
     functions
 */
 const int bitlen(int n);
+
+#if defined(WIN32) || defined(SLOWROUND) || defined(WIN64)
 int const round(const float x);
+#endif
 
 #endif
