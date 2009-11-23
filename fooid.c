@@ -30,7 +30,7 @@
 /* The original code seemed to assume that min() was a part of the standard library.
    Since it isn't, I've added a simple implementation. */
 #if !defined(WIN32) && !defined(WIN64)
-inline int min(int a, int b) { return (a < b) ? a : b; }
+int min(int a, int b) { return (a < b) ? a : b; }
 #endif
 
 
