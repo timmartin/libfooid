@@ -1,7 +1,7 @@
 libfooid_test: libfooid main.o
 	gcc main.o -L. -L./libresample -lfooid -lsndfile -lresample -o test
 
-$OBJS = common.o \
+OBJS = common.o \
 	fooid.o \
 	harmonics.o \
 	regress.o \

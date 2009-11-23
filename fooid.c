@@ -27,6 +27,13 @@
 #include "spectrum.h"
 #include "libresample/resample.h"
 
+/* The original code seemed to assume that min() was a part of the standard library.
+   Since it isn't, I've added a simple implementation. */
+#if !defined(WIN32) && !defined(WIN64)
+inline int min(int a, int b) { return (a < b) ? a : b; }
+#endif
+
+
 FOOIDAPI struct t_fooid* fp_init(int samplerate, int channels)
 {
     t_fooid *res = (t_fooid*)malloc(sizeof(t_fooid));
